@@ -1,0 +1,29 @@
+/* for breadcrumbs path bar */
+
+.nemo-pathbar-button,
+NemoPathbarButton {
+background-image: -gtk-gradient(linear, left top, left bottom,
+color-stop (0, shade(@dark_bg_color, 1.1)),
+color-stop (.3, shade(@dark_bg_color, 1.1)),
+color-stop (.7, shade(@dark_bg_color, 0.90)),
+color-stop (1, shade(@dark_bg_color, 0.80)));
+border-color: shade(@dark_bg_color, 0.7);
+-NemoPathbarButton-border-radius: 3px;
+}
+
+NemoPathbarButton:active {
+background-image: -gtk-gradient(linear, left top, left bottom,
+color-stop (0, shade(@dark_bg_color, .8)),
+color-stop (.3, shade(@dark_bg_color, .9)),
+color-stop (1, shade(@dark_bg_color, 1.0)));
+border-color: shade(@dark_bg_color, 0.7);
+}
+
+NemoPathbarButton:hover {
+background-image: -gtk-gradient(linear, left top, left bottom,
+color-stop (0, shade(alpha(@dark_bg_color, 1.4), 1.25)),
+color-stop (.3, shade(alpha(@dark_bg_color, 1.4), 1.25)),
+color-stop (.7, shade(alpha(@dark_bg_color, 1.4), 0.95)),
+color-stop (1, shade(alpha(@dark_bg_color, 1.4), 0.85)));
+border-color: shade(@dark_bg_color, 0.7);
+}
